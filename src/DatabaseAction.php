@@ -1,5 +1,5 @@
 <?php
-namespace DatabaseAddOn;
+namespace Database;
 
 use Database\Database;
 use Debug\Debug;
