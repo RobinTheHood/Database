@@ -50,7 +50,7 @@ class Database
 
     private static function prepareConfig($config)
     {
-        if (!$config['charset']) {
+        if (!isset($config['charset'])) {
             $config['charset'] = 'utf8';
         }
         return $config;
