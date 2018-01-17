@@ -1,8 +1,8 @@
 <?php
-namespace Database;
+namespace RobinTheHood\Database;
 
-use Database\Database;
-use Debug\Debug;
+use RobinTheHood\Database\Database;
+use RobinTheHood\Debug\Debug;
 
 class DatabaseAction
 {

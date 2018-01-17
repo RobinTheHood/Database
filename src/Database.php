@@ -1,7 +1,7 @@
 <?php
-namespace Database;
+namespace RobinTheHood\Database;
 
-use Debug\Debug;
+use RobinTheHood\Debug\Debug;
 
 class Database
 {

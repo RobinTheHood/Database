@@ -1,5 +1,5 @@
 <?php
-namespace Database;
+namespace RobinTheHood\Database;
 
 class DatabaseType
 {
