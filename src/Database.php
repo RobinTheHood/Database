@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\Database;
 
 use RobinTheHood\Debug\Debug;
@@ -7,8 +8,17 @@ class Database
 {
     private static $pdoInstance = null;
 
-    private function __construct() {}
-    private function _clone() {}
+    private function __construct()
+    {
+        Debug::error('PDO connection error: Can not create instance of Database.');
+        die();
+    }
+
+    private function __clone()
+    {
+        Debug::error('PDO connection error: Can not clone instance of Database.');
+        die();
+    }
 
     public static function getConnection($config = [])
     {

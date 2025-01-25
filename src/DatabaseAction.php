@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\Database;
 
 use RobinTheHood\Database\Database;
@@ -12,7 +13,7 @@ class DatabaseAction
         $stmt = $pdo->prepare($sql);
         $stmt->execute($values);
 
-        if($stmt->errorCode() != 0) {
+        if ($stmt->errorCode() != 0) {
             Debug::error('SQL-ERROR: ' . $stmt->errorInfo()[2]);
             die();
         }
@@ -26,7 +27,7 @@ class DatabaseAction
         $stmt = $pdo->prepare($sql);
         $stmt->execute($values);
 
-        if($stmt->errorCode() == 0) {
+        if ($stmt->errorCode() == 0) {
             $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
         } else {
             Debug::error('SQL-ERROR: ' . $stmt->errorInfo()[2]);
